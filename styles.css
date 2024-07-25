@@ -1,0 +1,123 @@
+/*
+
+CSS rules you may need for reference:
+
+- font-family
+    - Arial, sans-serif
+- line-height
+- color
+- margin
+- padding
+- background-color
+- border-radius
+- border-left
+- border-bottom
+- margin-top
+- padding-left
+- padding-bottom
+- width
+- height
+- margin-bottom
+- font-size
+
+*/
+
+/* Write your CSS code here */
+
+@keyframes bluechange {
+    0% {
+        color: #0000ff;
+    }
+    20% {
+        color: #3399ff;
+    }
+    40% {
+        color: #66ccff;
+    }
+    60% {
+        color: #0099cc;
+    }
+    80% {
+        color: #003366;
+    }
+    100% {
+        color: #0000ff;
+    }
+}
+
+body {
+    background-color: #f4f4f4;
+    border-top: 2px solid #f4f4f4;
+    border-left: 30px solid #f4f4f4;
+    border-right: 30px solid #f4f4f4;
+}
+
+main {
+    padding: 40px;
+    background-color: #f4f4f4;
+}
+
+footer {
+    margin: 0px -40px;
+    border-bottom: 4px solid #000000;
+}
+
+h1 {
+    border-radius: 5px;
+    color: #ffffff;
+    background: #3498db;
+    padding: 20px;
+    width: auto;
+}
+
+h2 {
+    border-left: 1px solid #3498db;
+    border-bottom: 1px solid #3498db;
+    padding: 5px 10px;
+    animation: bluechange 5s linear infinite;
+}
+
+section img {
+    border-radius: 5px;
+}
+
+section img:hover {
+    transform: scale(1.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th {
+    color: #ffffff;
+    background-color: #3498db;
+    padding: 8px;
+    text-align: left;
+}
+
+table tr:hover {
+    background-color: #3498db;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+td, th {
+    border-bottom: 1px solid #dddddd;
+    padding: 8px 8px;
+    text-align: left;
+}
+
+main p::first-letter {
+    font-size: 200%;
+    color: #3498db;
+}
